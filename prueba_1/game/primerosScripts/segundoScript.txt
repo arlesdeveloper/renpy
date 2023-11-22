@@ -1,0 +1,31 @@
+label start:
+    scene paisaje
+    with dissolve
+    show sky Feliz at left with dissolve 
+    sky"¿ Quieres jugar a un juego de ajedrez?" 
+    menu:
+        "{b}No se jugar{/b}":
+            sky"yo te enseño"
+        "{b}Me parece bien{/b}":
+            sky"Genial, vamos a jugar"
+            menu:
+                sky"¿Prefieres las blancas o negras?"
+                "Blancas":
+                    $color = "blancas"
+                    show sky Molesto at left with dissolve 
+                    sky"No seras racista"
+                "Negras":
+                    $color = "negras"
+                    scene hielo
+                    sky"me caes bien"
+
+    if color== "blancas":
+        sky"Empezemos señor amantes de las blancas"
+    else:
+        show sky Feliz at left with dissolve 
+        sky"Empezemos señor amantes de las negras"
+            
+    hide sky Feliz
+    "Empieza una gran batalla entre los personajes XD"        
+         
+        

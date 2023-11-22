@@ -1,0 +1,68 @@
+﻿# Coloca el código de tu juego en este archivo.
+
+# Declara los personajes usados en el juego como en el ejemplo:
+"""
+define e = Character("Eileen")
+define heli = Character("Heli")
+
+image heliPng="./images/personajes/heli.png"
+image paisaje="./images/escenarios/paisaje.png"
+
+image miku baila:
+    "./images/personajes/miku/miku_1.png"
+    pause 3
+    "./images/personajes/miku/miku_2.png"
+    pause .2 
+    "./images/personajes/miku/miku_3.png"
+    pause .2
+    "./images/personajes/miku/miku_4.png"
+    pause .2
+    "./images/personajes/miku/miku_5.png"
+    pause .2
+    "./images/personajes/miku/miku_6.png"
+    pause .2
+    "./images/personajes/miku/miku_7.png"
+    pause .2
+    "./images/personajes/miku/miku_8.png"
+    pause 0.2
+    "./images/personajes/miku/miku_9.png"
+    pause 0.2
+    repeat
+
+image mika baila:
+    "./images/personajes/mika/mika_2.png"
+    pause 1.5
+    "./images/personajes/mika/mika_3.png"
+    pause .2 
+    "./images/personajes/mika/mika_1.png"
+    pause .2
+    repeat
+# El juego comienza aquí.
+
+#label start:
+    scene paisaje
+    play music "./audio/musica/weird.mp3"
+    heli"Hola mundo"
+    heli"esta linda la noche"
+    heli"el cielo esta estrellado"
+    stop music
+    play sound "./audio/sonidos/buho.ogg"
+    "un buho"
+    #at right
+    show heliPng at left
+    show mika baila with dissolve 
+    voice "./audio/voces/hola.ogg"
+    with dissolve
+    "Holaaa!"
+    
+""" 
+
+
+"""menu optional_name:
+                sky"¿Prefieres las blancas o negras?"
+                "Blancas":
+                    sky"No seras racista"
+                "Negras":
+                    sky"me caes bien"
+            """ 
+   

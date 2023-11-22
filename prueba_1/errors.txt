@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 75: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        "Empieza una gran batalla entre los personajes""        
+
+Ren'Py Version: Ren'Py 7.4.11.2266
+Sun May 29 11:58:16 2022
